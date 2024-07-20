@@ -6,6 +6,11 @@ import cors from "cors";
 
 dotenv.config();
 
+// Debugging to check if env variables are loaded correctly
+console.log('Razorpay Key:', process.env.Razorpay_Key);
+console.log('Razorpay Secret:', process.env.Razorpay_Secret);
+console.log('PORT:', process.env.PORT);
+
 export const instance = new Razorpay({
     key_id: process.env.Razorpay_Key,
     key_secret: process.env.Razorpay_Secret,
