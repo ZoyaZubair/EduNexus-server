@@ -12,8 +12,8 @@ console.log('Razorpay Secret:', process.env.Razorpay_Secret);
 console.log('PORT:', process.env.PORT);
 
 export const instance = new Razorpay({
-    key_id: rzp_test_fvJgHjYbdo5eCd,
-    key_secret: vn8zNf2ENwKFkHy8qkEOZhl3,
+    key_id: process.env.Razorpay_Key,
+    key_secret: process.env.Razorpay_Secret,
 });
 
 
