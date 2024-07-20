@@ -4,6 +4,7 @@ import { Lecture } from "../models/Lecture.js";
 import { User } from "../models/User.js";
 import crypto from 'crypto'
 import {Payment} from '../models/Payment.js'
+import { instance } from '../index.js';
 
 export const getAllCourses = TryCatch(async (req, res) => {
   const courses = await Courses.find();
